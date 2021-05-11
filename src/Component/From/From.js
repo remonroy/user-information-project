@@ -37,7 +37,7 @@ const From = () => {
             
         }
         console.log(allreviewInfo);
-        fetch('http://localhost:4000/infopost',{
+        fetch('https://pure-everglades-96026.herokuapp.com/infopost',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(allreviewInfo)

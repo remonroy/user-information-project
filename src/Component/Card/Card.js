@@ -12,7 +12,7 @@ const Card = () => {
     const[id,setId]=useState()
 
     const loadData=()=>{
-        fetch('http://localhost:4000/showData')
+        fetch('https://pure-everglades-96026.herokuapp.com/showData')
         .then(res=>res.json())
         .then(data=>{
             setInfo(data)
@@ -24,7 +24,7 @@ const Card = () => {
         loadData()
     },[])
     const handleClick=(id)=>{
-        fetch(`http://localhost:4000/delete/${id}`,{
+        fetch(`https://pure-everglades-96026.herokuapp.com/delete/${id}`,{
             method:'DELETE'
         })
         .then(res=>res.json())
@@ -35,7 +35,7 @@ const Card = () => {
     }
     const handleUpdate=(id)=>{
         
-        fetch(`http://localhost:4000/update/${id}`)
+        fetch(`https://pure-everglades-96026.herokuapp.com/update/${id}`)
         .then(res=>res.json())
         .then(data=>{
             setUpdate(data[0].firstName)
@@ -54,7 +54,7 @@ const Card = () => {
             email:updateTwo
         }
         console.log(updateData);
-        fetch('http://localhost:4000/updateFild',{
+        fetch('https://pure-everglades-96026.herokuapp.com/updateFild',{
             method: 'PATCH',
             headers: {'Content-Type':'application/json'},
             body:JSON.stringify(updateData)
