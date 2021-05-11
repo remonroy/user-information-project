@@ -1,0 +1,21 @@
+.mainDive {
+    border: 1px solid;
+    width: 309px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+.letSite {
+    width: 108px;
+    float: left;
+}
+.rightSite a {
+    margin-right: 10px;
+}
+.rightSite {
+    width: 150px;
+    float: right;
+    text-align: center;
+}
+.folotig {
+    margin-bottom: 43px;
+}
